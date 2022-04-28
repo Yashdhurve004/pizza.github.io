@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>signup</title>
+</head>
+<body>
+
+  <!--integreated Bootstrap-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  
+  <!--font awesome offline link-->
+  <link type="text/css" rel="stylesheet" href="css/all.min.css">
+  
+  <!-- style css -->
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  
+  <!-- media css -->
+  <link type="text/css" rel="stylesheet" href="css/media.css">
+  
+  <!-- animate css -->
+  <link rel="stylesheet"href="css/animate.min.css"/>
+
+<!-----------------------------------------navbar start----------------------------------------------------->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="img/logo.svg"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html">MENU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="booking.html">BOOKING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">ABOUT US</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="contactus.html">CONTACT US</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">MY ACCOUNT</a>
+            <ul class="dropdown-menu bg-dark">
+             <li class="dropdown-item text-white"><a href="login.html"><b>LOGIN IN</b></a></li>
+             <li class="dropdown-item text-white"><a href="signup.html"><b>SIGN UP</b></a></li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-----------------------------------------signup-wrapper----------------------------------------------------->
+<div class="signup-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="signup-form col-12 col-lg-8" style="text-align:;">
+				<div class="signup-heading text-warning mt-5">
+					<h1>Create an Account</h1>
+				</div>
+				<form action="/action_page.php" autocomplete="off" name="mysignupform" onsubmit="return signupform()">
+					<div class="mb-3 mt-3">
+						<label for="name" class="form-label">First Name</label>
+						<input type="name" class="form-control" id="fname" placeholder="First Name" name="fname">
+					</div>
+					<div class="mb-3 mt-3">
+						<label for="name" class="form-label">Last Name</label>
+						<input type="name" class="form-control" id="lname" placeholder="Last Name" name="lname">
+					</div>
+					<div class="mb-3">
+						<label for="email" class="form-label">Mobile Number</label>
+						<input type="text" class="form-control" id="phone" placeholder="Your Phone" name="phone">
+					</div>
+					<div class="mb-3">
+							<label for="text" class="form-label">Email:</label>
+							<input type="text" class="form-control" id="email" placeholder="Email......" name="email">
+					</div>
+					<div class="mb-3">
+						<label for="pass" class="form-label">Password</label>
+						<input type="text" class="form-control" id="pass" placeholder="Password" name="pass">
+					</div>
+					<div class="mb-3">
+						<label for="re-pass" class="form-label">Re-Enter Password</label>
+						<input type="text" class="form-control" id="re-pass" placeholder="Re-Enter Password" name="repass">
+					</div>
+						  <h6>We don't span customers. Check our <a href="#" class="privacy text-warning">Privacy Policy</a></h6>
+
+						  <!--#####################################[Check-Box]################################################-->
+					<div class="form-check mb-3">
+						<label class="form-check-label">
+						  <input class="form-check-input" type="checkbox" name="offers"> Receive offers from our partners
+						</label>
+					</div>
+					<div class="form-check mb-3">
+						<label class="form-check-label">
+						  <input class="form-check-input" type="checkbox" name="newsletter"> 	Sign up for our newsletter You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.
+						</label>
+					</div>
+					<div class="form-check mb-3">
+						<label class="form-check-label">
+						  <input class="form-check-input" type="checkbox" name="Customer"> Customer data privacy The personal data you provide is used to answer queries, process orders or allow access to specific information. You have the right to modify and delete all the personal information found in the "My Account" page.
+						</label>
+					</div>
+					<div class="form-check mb-3">
+						<label class="form-check-label">
+						  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+						</label>
+					</div>
+						  <div class="signin"><a href="login.html">Already have an Account<br>Signin</a></div>
+						  <button class="btn btn-warning text-white mb-5">Submit</button>
+						  <button type="reset" class="btn btn-warning text-white mb-5">Reset</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--javascript pages link-->
+<script src="validation-js/validation.js"></script>
+</body>
+</html>
